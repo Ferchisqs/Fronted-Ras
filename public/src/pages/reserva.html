@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hacer Reserva</title>
+    <link rel="stylesheet" href="../css/estilos.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="/index.html">Inicio</a></li>
+                <li><a href="./menu.html">Menú</a></li>
+                <li><a href="./reserva.html">Hacer Reserva</a></li>
+                <li><a href="./login.html">Inicio de Sesión</a></li>
+                <li><a href="./agregarMesas.html" class="admin">Agregar Mesas</a></li>
+                <li><a href="./verMesas.html" class="admin">Ver Mesas</a></li>
+                <li><a href="./agregarMeseros.html" class="admin">Agregar Meseros</a></li>
+                <li><a href="./verMeseros.html" class="admin">Ver Meseros</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <h2>Hacer Reserva</h2>
+            <form id="reserva-form">
+                <label for="id_usuario">ID Usuario:</label>
+                <input type="text" id="id_usuario" name="id_usuario" required>
+                <label for="id_mesa">ID Mesa:</label>
+                <input type="text" id="id_mesa" name="id_mesa" required>
+                <label for="pago">Pago:</label>
+                <input type="text" id="pago" name="pago" required>
+                <button type="submit">Hacer Reserva</button>
+            </form>
+            <p id="reserva-error" style="color:red; display:none;">Error al hacer la reserva.</p>
+            <p id="reserva-exito" style="color:green; display:none;">Reservación realizada con éxito.</p>
+        </section>
+    </main>
+    <script src="../js/script.js"></script>
+</body>
+</html>

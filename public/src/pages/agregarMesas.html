@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agregar Mesas</title>
+    <link rel="stylesheet" href="../css/estilos.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="/index.html">Inicio</a></li>
+                <li><a href="./menu.html">Menú</a></li>
+                <li><a href="./reserva.html">Hacer Reserva</a></li>
+                <li><a href="./login.html">Inicio de Sesión</a></li>
+                <li><a href="./agregarMesas.html" class="admin">Agregar Mesas</a></li>
+                <li><a href="./verMesas.html" class="admin">Ver Mesas</a></li>
+                <li><a href="./agregarMeseros.html" class="admin">Agregar Meseros</a></li>
+                <li><a href="./verMeseros.html" class="admin">Ver Meseros</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <h2>Agregar Mesas</h2>
+            <form>
+                <label for="numero">Número de Mesa:</label>
+                <input type="text" id="numero" name="numero">
+                <label for="capacidad">Capacidad:</label>
+                <input type="number" id="capacidad" name="capacidad">
+                <button type="submit">Agregar Mesa</button>
+            </form>
+        </section>
+    </main>
+    <script src="../js/script.js"></script>
+</body>
+</html>
